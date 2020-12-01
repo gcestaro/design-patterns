@@ -1,4 +1,4 @@
-package com.github.gcestaro;
+package com.github.gcestaro.singleton;
 
 public class Singleton {
 
