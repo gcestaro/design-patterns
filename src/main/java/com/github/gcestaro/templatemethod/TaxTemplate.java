@@ -7,7 +7,7 @@ import com.github.gcestaro.chain.Tax;
 public abstract class TaxTemplate implements Tax {
 
 	@Override
-	public BigDecimal getValue(BigDecimal amount) {
+	public final BigDecimal getValue(BigDecimal amount) {
 
 		if (useMaxTaxBasedOn(amount)) {
 			return maxTax(amount);
