@@ -5,7 +5,10 @@ import static java.util.Objects.requireNonNull;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
+
+import com.github.gcestaro.observer.ProductCreationObserver;
 
 public class Product {
 
@@ -16,10 +19,6 @@ public class Product {
 	private ProductCategory category;
 
 	private final LocalDate createdAt;
-
-	public Product() {
-		this(null, new HashSet<>(), null, LocalDate.now());
-	}
 
 	private Product(String name, Set<BarCode> barCodes, ProductCategory category, LocalDate createdAt) {
 		this.name = name;
@@ -70,6 +69,14 @@ public class Product {
 
 		private LocalDate createdAt = LocalDate.now();
 
+		private Set<ProductCreationObserver> creationActions = new LinkedHashSet<>();
+
+		public ProductBuilder runAfterCreation(ProductCreationObserver action) {
+			requireNonNull(action, "Action must not be null");
+			this.creationActions.add(action);
+			return this;
+		}
+
 		public ProductBuilder name(String name) {
 			this.name = requireNonNull(name, "Name must not be null");
 			return this;
@@ -98,7 +105,11 @@ public class Product {
 		}
 
 		public Product build() {
-			return new Product(this.name, this.barCodes, this.category, this.createdAt);
+			Product product = new Product(this.name, this.barCodes, this.category, this.createdAt);
+
+			creationActions.forEach(action -> action.execute(product));
+
+			return product;
 		}
 	}
 }
