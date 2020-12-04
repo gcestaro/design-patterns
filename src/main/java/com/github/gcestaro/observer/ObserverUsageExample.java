@@ -5,7 +5,6 @@ import com.github.gcestaro.builder.Product;
 public class ObserverUsageExample {
 
 	public void example() {
-
 		Product.builder()
 				.addBarCode("123234")
 				.category("Category A")
