@@ -1,6 +1,7 @@
 package com.github.gcestaro.state;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class OrderItem {
 
@@ -45,5 +46,27 @@ public class OrderItem {
 
 	public BigDecimal getFinalPrice() {
 		return price.subtract(discount);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(this.product, this.price, this.discount, this.quantity);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+
+		if (!(obj instanceof OrderItem)) {
+			return false;
+		}
+
+		OrderItem other = (OrderItem) obj;
+		return Objects.equals(this.product, other.product)
+				&& Objects.equals(this.price, other.price)
+				&& Objects.equals(this.discount, other.discount)
+				&& Objects.equals(this.quantity, other.quantity);
 	}
 }
