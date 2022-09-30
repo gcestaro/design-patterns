@@ -106,7 +106,20 @@ we need, we access the file or paper. This will be our "cache", but the memory i
 
 ### References
 
-- [Refactoring Guru](https://refactoring.guru/design-patterns/facade)
-- [Alura](https://cursos.alura.com.br/course/avancando-design-patterns-java/task/85656)
+- [Refactoring Guru](https://refactoring.guru/design-patterns/flyweight)
+- [Alura]()
 
+## Proxy
 
+Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
+controls access to the original object, allowing you to perform something either before or after the request gets
+through to the original object.
+
+### Real life example
+
+A bank account is a proxy to your real money (gold or something).
+A credit/debit card is a proxy to your bank account.
+
+### References
+
+- [Refactoring Guru](https://refactoring.guru/design-patterns/proxy)
