@@ -102,7 +102,7 @@ It is more a computer science problem than a real world. But we can use imaginat
 
 Let's say our brain has a limited amount of memory that is stored to us remember. We could use a
 file in a computer or a notebook to write things and them we don't need to remember everything. Once
-we need, we access the file or paper. This will be our "cache", but the memory is still somewhere.
+we need, we access the file or paper. This will be our "cache".
 
 ### References
 
