@@ -107,12 +107,13 @@ we need, we access the file or paper. This will be our "cache".
 ### References
 
 - [Refactoring Guru](https://refactoring.guru/design-patterns/flyweight)
-- [Alura]()
 
 ## Proxy
 
-Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
-controls access to the original object, allowing you to perform something either before or after the request gets
+Proxy is a structural design pattern that lets you provide a substitute or placeholder for another
+object. A proxy
+controls access to the original object, allowing you to perform something either before or after the
+request gets
 through to the original object.
 
 ### Real life example

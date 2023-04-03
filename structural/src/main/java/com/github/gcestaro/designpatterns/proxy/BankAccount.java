@@ -4,13 +4,13 @@ import java.util.Set;
 
 public class BankAccount {
 
-    private Set<Gold> goldStore;
+  private Set<Gold> goldStore;
 
-    public boolean deposit(Cash cash) {
-        return true;
-    }
+  public boolean deposit(Cash cash) {
+    return true;
+  }
 
-    public boolean withdraw(Cash amount) {
-        return false;
-    }
+  public boolean withdraw(Cash amount) {
+    return false;
+  }
 }

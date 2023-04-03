@@ -2,13 +2,13 @@
 
 ## Factory Method
 
-Factory Method is a creational design pattern that provides an interface for creating objects 
+Factory Method is a creational design pattern that provides an interface for creating objects
 in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 ### Real life example
 
-As a lawyer, you might want to generate different types of contracts for each of your clients based 
-on the case, the client, etc.  
+As a lawyer, you might want to generate different types of contracts for each of your clients based
+on the case, the client, etc.
 
 ### References
 
@@ -16,7 +16,7 @@ on the case, the client, etc.
 
 ## Abstract Factory
 
-Abstract Factory is a creational design pattern that lets you produce families of related objects 
+Abstract Factory is a creational design pattern that lets you produce families of related objects
 without specifying their concrete classes.
 
 ### Real life example
@@ -44,8 +44,8 @@ TODO
 
 ## Builder
 
-Builder is a creational design pattern that lets you construct complex objects step by step. 
-The pattern allows you to produce different types and representations of an object using the same 
+Builder is a creational design pattern that lets you construct complex objects step by step.
+The pattern allows you to produce different types and representations of an object using the same
 construction code.
 
 ### Real life example
@@ -58,13 +58,13 @@ The construction of a building is complex and has lots of rules involved.
 
 ## Prototype
 
-Prototype is a creational design pattern that lets you copy existing objects without making your 
+Prototype is a creational design pattern that lets you copy existing objects without making your
 code dependent on their classes.
 
 ### Real life example
 
-A closer analogy to the pattern is the process of mitotic cell division (biology, remember?). 
-After mitotic division, a pair of identical cells is formed. The original cell acts as a prototype 
+A closer analogy to the pattern is the process of mitotic cell division (biology, remember?).
+After mitotic division, a pair of identical cells is formed. The original cell acts as a prototype
 and takes an active role in creating the copy.
 
 ### References
@@ -74,7 +74,7 @@ and takes an active role in creating the copy.
 
 ## Singleton
 
-Singleton is a creational design pattern that lets you ensure that a class has only one instance, 
+Singleton is a creational design pattern that lets you ensure that a class has only one instance,
 while providing a global access point to this instance.
 
 ### Real life example

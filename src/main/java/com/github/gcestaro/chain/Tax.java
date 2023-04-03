@@ -4,5 +4,5 @@ import java.math.BigDecimal;
 
 public interface Tax {
 
-	BigDecimal getValue(BigDecimal amount);
+  BigDecimal getValue(BigDecimal amount);
 }

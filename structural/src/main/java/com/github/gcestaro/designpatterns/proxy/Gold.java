@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class Gold implements PaymentMethod {
 
-    @Override
-    public boolean pay(BigDecimal amount) {
-        return true;
-    }
+  @Override
+  public boolean pay(BigDecimal amount) {
+    return true;
+  }
 }

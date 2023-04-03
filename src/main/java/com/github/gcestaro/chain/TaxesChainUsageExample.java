@@ -2,25 +2,24 @@ package com.github.gcestaro.chain;
 
 import static java.util.Objects.requireNonNull;
 
-import java.math.BigDecimal;
-
 import com.github.gcestaro.strategy.ProcessorStrategyMinTaxExample;
 import com.github.gcestaro.strategy.ProcessorStrategyTaxLimitExample;
+import java.math.BigDecimal;
 
 public class TaxesChainUsageExample {
 
-	private final BigDecimal amount;
+  private final BigDecimal amount;
 
-	public TaxesChainUsageExample(BigDecimal amount) {
-		this.amount = requireNonNull(amount);
-	}
+  public TaxesChainUsageExample(BigDecimal amount) {
+    this.amount = requireNonNull(amount);
+  }
 
-	public BigDecimal calculateTax() {
+  public BigDecimal calculateTax() {
 
-		BigDecimal taxesAmount = new Chain<>(new ProcessorStrategyTaxLimitExample(new UnfairTax()),
-				new Chain<>(new ProcessorStrategyMinTaxExample(new FairTax())))
-						.process(amount);
+    BigDecimal taxesAmount = new Chain<>(new ProcessorStrategyTaxLimitExample(new UnfairTax()),
+        new Chain<>(new ProcessorStrategyMinTaxExample(new FairTax())))
+        .process(amount);
 
-		return amount.subtract(taxesAmount);
-	}
+    return amount.subtract(taxesAmount);
+  }
 }
