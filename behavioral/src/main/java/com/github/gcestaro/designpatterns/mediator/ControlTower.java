@@ -18,4 +18,8 @@ public class ControlTower {
     this.isLandAvailable = !this.isLandAvailable;
     return isLandAvailable;
   }
+
+  boolean canLiftOff(Route route) {
+    return !flyingRoute.containsKey(route);
+  }
 }

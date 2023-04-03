@@ -31,10 +31,56 @@ exposing its underlying representation (list, stack, tree, etc.).
 
 ## Mediator
 
-Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. 
+Also known as Controller, Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. 
 The pattern restricts direct communications between the objects and forces them to collaborate only 
 via a mediator object.
 
 ## References
 
 * [Refactoring Guru](https://refactoring.guru/design-patterns/mediator)
+
+## Memento
+
+Also known as Snapshot, Memento is a behavioral design pattern that lets you save and restore the previous state of an 
+object without revealing the details of its implementation.
+
+## References
+
+* [Refactoring Guru](https://refactoring.guru/design-patterns/memento)
+
+## Observer
+
+Also known as Event-Subscriber, Listener, Observer is a behavioral design pattern that lets you 
+define a subscription mechanism to notify multiple objects about any events that happen to the 
+object they’re observing.
+
+## References
+
+* [Refactoring Guru](https://refactoring.guru/design-patterns/observer)
+
+## State
+
+State is a behavioral design pattern that lets an object alter its behavior when its internal state 
+changes. It appears as if the object changed its class.
+
+## References
+
+* [Refactoring Guru](https://refactoring.guru/design-patterns/state)
+
+## Strategy
+
+Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of 
+them into a separate class, and make their objects interchangeable.
+
+## References
+
+* [Refactoring Guru](https://refactoring.guru/design-patterns/strategy)
+
+## Template Method
+
+Template Method is a behavioral design pattern that defines the skeleton of an algorithm in the 
+superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+
+## References
+
+* [Refactoring Guru](https://refactoring.guru/design-patterns/template-method)
