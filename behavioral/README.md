@@ -84,3 +84,12 @@ superclass but lets subclasses override specific steps of the algorithm without 
 ## References
 
 * [Refactoring Guru](https://refactoring.guru/design-patterns/template-method)
+* [Design Patterns Saga](https://github.com/rafadelnero/design-patterns-saga/)
+
+## Visitor
+
+Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
+
+## References
+
+* [Refactoring Guru](https://refactoring.guru/design-patterns/visitor)
